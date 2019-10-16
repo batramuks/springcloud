@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: springcontractcalculatorclient.api.CalculatorControllerIntegrationTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 22.689 s <<< FAILURE! - in springcontractcalculatorclient.api.CalculatorControllerIntegrationTest
+given_WhenPassEvenNumberInQueryParam_ThenReturnEven(springcontractcalculatorclient.api.CalculatorControllerIntegrationTest)  Time elapsed: 0.016 s  <<< ERROR!
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'springcontractcalculatorclient.api.CalculatorControllerIntegrationTest': Unsatisfied dependency expressed through field 'mockMvc'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.test.web.servlet.MockMvc' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.test.web.servlet.MockMvc' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+
