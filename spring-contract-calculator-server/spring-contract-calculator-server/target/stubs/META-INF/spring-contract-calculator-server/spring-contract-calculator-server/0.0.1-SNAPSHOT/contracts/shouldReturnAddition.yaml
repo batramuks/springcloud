@@ -1,0 +1,14 @@
+name: "should Add"
+request: 
+  body: 
+    a: "10"
+    b: "20"
+  headers: 
+    Content-Type: application/json;charset=UTF-8
+  method: POST
+  url: /calculate/add
+response: 
+  body: "30"
+  headers: 
+    Content-Type: application/json;charset=UTF-8
+  status: 200

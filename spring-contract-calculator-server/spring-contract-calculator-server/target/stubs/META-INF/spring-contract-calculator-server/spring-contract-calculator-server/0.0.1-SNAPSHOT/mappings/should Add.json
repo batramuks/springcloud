@@ -1,0 +1,26 @@
+{
+  "id" : "38f783c0-4971-421f-9fd7-8a4e442d8728",
+  "request" : {
+    "url" : "/calculate/add",
+    "method" : "POST",
+    "headers" : {
+      "Content-Type" : {
+        "equalTo" : "application/json;charset=UTF-8"
+      }
+    },
+    "bodyPatterns" : [ {
+      "matchesJsonPath" : "$[?(@.['b'] == '20')]"
+    }, {
+      "matchesJsonPath" : "$[?(@.['a'] == '10')]"
+    } ]
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "30",
+    "headers" : {
+      "Content-Type" : "application/json;charset=UTF-8"
+    },
+    "transformers" : [ "response-template" ]
+  },
+  "uuid" : "38f783c0-4971-421f-9fd7-8a4e442d8728"
+}
